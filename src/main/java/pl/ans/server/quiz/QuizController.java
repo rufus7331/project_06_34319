@@ -28,4 +28,12 @@ public class QuizController {
             throw new ResourceNotFoundException();
         }
     }
+
+    @PostMapping("/report")
+    public void report(){ quizService.report();}
+
+    @PutMapping(path = "/calculate")
+    public void updateAnswer(@RequestBody Answer answer) throws Exception {
+        quizService.updateAnswer(answer);
+    }
 }
