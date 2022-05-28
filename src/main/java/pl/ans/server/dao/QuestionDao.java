@@ -4,4 +4,5 @@ import pl.ans.server.quiz.Question;
 import java.util.List;
 
 public interface QuestionDao {
+    List<Question> findAll() throws Exception;
 }
