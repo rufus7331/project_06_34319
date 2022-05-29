@@ -5,9 +5,8 @@ import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
 import pl.ans.server.quiz.Answer;
 import pl.ans.server.quiz.BadRequestException;
-
-import javax.swing.text.Document;
-import javax.swing.text.Element;
+import com.itextpdf.text.*;
+import com.itextpdf.text.pdf.*;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.util.Arrays;
@@ -87,8 +86,8 @@ public class DocumentComponentImpl implements DocumentComponent {
         PdfShading axial = PdfShading.simpleAxial(writer,
                 pageSize.getLeft(pageSize.getWidth()/10), pageSize.getBottom(),
                 pageSize.getRight(pageSize.getWidth()/10), pageSize.getBottom(),
-                new BaseColor(128, 193, 255),
-                new BaseColor(187, 153, 255), true, true);
+                new BaseColor(124,185,232),
+                new BaseColor(240,248,255), true, true);
         PdfContentByte canvas = writer.getDirectContentUnder();
         canvas.paintShading(axial);
     }
