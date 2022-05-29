@@ -66,7 +66,7 @@ public class ResourceDAO implements Resource {
         String fileUrl = path + Resource.fileName;
 
         try {
-            PrintWriter pw = new PrintWriter(new FileOutputStream(new File(fileUrl), true));
+            PrintWriter pw = new PrintWriter(new FileOutputStream(fileUrl, true));
             pw.write(fileData.getFileName() + "," + fileData.getSize() + "," + fileData.getCreationDate() + "\n");
             pw.close();
 
