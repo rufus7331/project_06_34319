@@ -15,3 +15,5 @@ udzielona poprawnie. Na końcu serwer ma za zadanie naliczyć liczbę zebranych 
 
 Informacje techniczne
 Aplikacja klient-serwer napisana w języku JAVA przy użyciu IntelliJ IDEA. Podczas pracy wykorzystano rozproszony system kontroli wersji Git na platformie Github.
+
+klient - https://github.com/rufus7331/nisp_project_client
